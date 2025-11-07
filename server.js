@@ -12,5 +12,5 @@ const list = await kv.list({ prefix: ['妖精'] });
 
 for await (const e of list) {
   console.log(e.key);
-  console.log(e.value);
+  console.log(e.value.color);
 }
